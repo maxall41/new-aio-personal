@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
+import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
 	},
 	integrations: [
 		mdx({}),
+		lottie(),
 		tailwind({
 			config: {
 				applyBaseStyles: false,
