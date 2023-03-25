@@ -5,7 +5,7 @@ tags: ["Biotech", "Protocol"]
 publishDate: "25 Mar 2023"
 ---
 
-This is a modified protocol for transfecting DNA into BL21 E. coli or other strains of E. coli. It is based off of [this](<(https://github.com/thethoughtemporium/Protocols/blob/main/Transformations/bl21%20transformation.md)>) protocol from the Thought Emporium, but with a few minor changes such as replacing LB broth media with SOC media for recovery after transfection.
+This is a modified protocol for transfecting DNA into BL21 E. coli or other strains of E. coli. It is based off of [this](https://github.com/thethoughtemporium/Protocols/blob/main/Transformations/bl21%20transformation.md) protocol from the Thought Emporium, but with a few minor changes such as replacing LB broth media with SOC media for recovery after transfection.
 
 ## Materials
 
