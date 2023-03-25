@@ -1,29 +1,16 @@
 ---
-const API_URL = "https://blog-clap-service.vercel.app/";
-
 const { id } = Astro.props;
 console.log(Astro.props);
-let url = API_URL + "api/claps/get?post_title=" + id;
-console.log(url);
-let claps = 0;
-const getClapsRequest = await fetch(url);
-const clapsResult = await getClapsRequest.json();
-if (clapsResult.claps == null) {
-	claps = 0;
-} else {
-	claps = clapsResult.claps;
-}
 ---
 
 <button
 	class="group relative h-9 w-16 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700"
 	data-clap-button
-	><i class="fa-solid fa-hands-clapping text-white"></i><span class="ml-2" id="clap-count"
-		>{claps}</span
+	><i class="fa-solid fa-hands-clapping text-white"></i><span class="ml-2" id="clap-count">0</span
 	></button
 >
 
-<script define:vars={{ id, claps }}>
+<script define:vars={{ id }}>
 	const API_URL = "https://blog-clap-service.vercel.app/";
 
 	// Find our component DOM on the page.
@@ -41,4 +28,15 @@ if (clapsResult.claps == null) {
 				parseInt(document.getElementById("clap-count").innerHTML) + 1;
 		});
 	});
+
+	async function fetch_claps() {
+		let url = API_URL + "api/claps/get?post_title=" + id;
+		let claps = 0;
+		const getClapsRequest = await fetch(url);
+		const clapsResult = await getClapsRequest.json();
+		if (clapsResult.claps != null) {
+			document.getElementById("clap-count").innerHTML = clapsResult.claps;
+		}
+	}
+	fetch_claps();
 </script>
