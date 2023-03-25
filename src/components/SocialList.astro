@@ -6,7 +6,7 @@ import { SOCIAL_LINKS } from "@/data/constants";
 
 <div class="flex flex-wrap items-center gap-x-4 sm:items-center">
 	<p>Find me on</p>
-	<ul class="flex flex-1 items-center gap-x-4 sm:flex-initial">
+	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
 		<li>
 			<a
 				class="inline-block p-2 sm:hover:text-link"
@@ -35,21 +35,59 @@ import { SOCIAL_LINKS } from "@/data/constants";
 				<span class="sr-only">Github</span>
 			</a>
 		</li>
-<li>
+		<li>
 			<a
 				class="inline-block p-2 sm:hover:text-link"
 				href={SOCIAL_LINKS.soundcloud}
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M17 11h1c1.38 0 3 1.274 3 3c0 1.657 -1.5 3 -3 3l-6 0v-10c3 0 4.5 1.5 5 4z" />
-  <line x1="9" y1="8" x2="9" y2="17" />
-  <line x1="6" y1="17" x2="6" y2="10" />
-  <line x1="3" y1="16" x2="3" y2="14" />
-</svg>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M17 11h1c1.38 0 3 1.274 3 3c0 1.657 -1.5 3 -3 3l-6 0v-10c3 0 4.5 1.5 5 4z"
+					></path>
+					<line x1="9" y1="8" x2="9" y2="17"></line>
+					<line x1="6" y1="17" x2="6" y2="10"></line>
+					<line x1="3" y1="16" x2="3" y2="14"></line>
+				</svg>
 				<span class="sr-only">Soundcloud</span>
+			</a>
+		</li>
+		<li>
+			<a
+				class="inline-block p-2 sm:hover:text-link"
+				href={SOCIAL_LINKS.orcid}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+					<path
+						d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"
+					></path>
+					<path d="M8 8l4 0"></path>
+					<path d="M8 12l4 0"></path>
+					<path d="M8 16l4 0"></path>
+				</svg>
+				<span class="sr-only">ORCID</span>
 			</a>
 		</li>
 	</ul>
