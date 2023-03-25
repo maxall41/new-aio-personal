@@ -9,7 +9,7 @@ Recently I needed to upload files to S3 inside of actix web. And decided to use 
 If you don't know when to upload files normally you have to send the file to your server and then the server sends that file to S3.
 But with direct uploading, the server generates a special signed URL for securely uploading files and the browser uploads it directly significantly increasing speed. Todo this we need to implement the s3 signed URL generator in actix web I used this code snippet to do this:
 
-```
+```rust
 async fn generate_image_signed_url(req: HttpRequest) -> impl Responder {
     // Verify JWT
     verify_jwt(get_auth_token(&req).unwrap());
