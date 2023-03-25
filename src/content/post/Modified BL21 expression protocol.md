@@ -1,7 +1,7 @@
 ---
 title: Modified BL21 expression protocol
 description: A modified protocol for transfecting BL21 E. coli with recombinant DNA.
-tags: ["Biotech"]
+tags: ["Biotech", "Protocol"]
 publishDate: "25 Mar 2023"
 ---
 
