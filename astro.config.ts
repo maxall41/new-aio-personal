@@ -7,6 +7,9 @@ import prefetch from "@astrojs/prefetch";
 import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
+import svelte from "@astrojs/svelte";
+
+// https://astro.build/config
 export default defineConfig({
 	site: "https://www.astro-theme-cactus.netlify.app/",
 	markdown: {
@@ -28,6 +31,7 @@ export default defineConfig({
 		}),
 		sitemap(),
 		prefetch(),
+		svelte(),
 	],
 	vite: {
 		optimizeDeps: {

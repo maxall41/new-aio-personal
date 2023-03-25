@@ -20,3 +20,5 @@ export const MENU_LINKS = [
 export const SOCIAL_LINKS = {
 	github: "https://github.com/maxall41",
 };
+
+export const API_URL = "https://blog-clap-service.vercel.app/";
