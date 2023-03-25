@@ -2,6 +2,7 @@
 	export let id;
 	let claps = 0
 	import { API_URL } from "@/data/constants";
+	
 
 	async function clap() {
 		const clapRequest = await fetch(API_URL + "api/claps/increment", {
