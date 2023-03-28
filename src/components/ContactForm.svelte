@@ -37,7 +37,6 @@
 </script>
 
   <section  class="mb-4">
-         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <div class="mb-4 mt-4">
       <label class="block text-textColor  text-sm font-bold mb-2" for="email">
         Email:
@@ -49,6 +48,6 @@
         Message:
       </label>
      <input class="input-primary pb-32 text-start mb-4" id="message" type="text" placeholder="Hello, World!"  bind:value={$messageField.value} />
-     <Turnstile turnstile-error={turnstileFailed} turnstile-callback={turnstileComplete} siteKey="0x4AAAAAAADj_D0FYcG1g4BO" />
+     <Turnstile on:turnstile-error={turnstileFailed} on:turnstile-callback={turnstileComplete} siteKey="0x4AAAAAAADj_D0FYcG1g4BO" />
     <button on:click={contactSubmit} class="relative h-9 w-full rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 mt-6 dark:bg-zinc-700" >Submit</button>
     </section>
