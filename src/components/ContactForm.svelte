@@ -1,7 +1,7 @@
 <script>
-  import { form, field } from 'svelte-forms';
   import { required, email } from 'svelte-forms/validators';
   import { API_URL } from '@/data/constants';
+  import { form, field } from 'svelte-forms';
 
   const emailField = field('email', '', [required(),email()]);
   const messageField = field('message', '', [required()]);
@@ -10,11 +10,11 @@
   let token = ""
 
   function turnstileComplete(data) {
-console.log(data);
-token = data
+    token = data;
   }
 
-  async function submit() {
+  async function contactSubmit() {
+    console.log("123");
     console.log(token)
     const contactRequest = await fetch(API_URL + "api/contact/submit", {
 				method: "POST",
@@ -29,10 +29,9 @@ token = data
 
 </script>
 
-<section>
-     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <section  class="mb-4">
-    <div class="mb-4">
+         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <div class="mb-4 mt-4">
       <label class="block text-textColor  text-sm font-bold mb-2" for="email">
         Email:
       </label>
@@ -43,8 +42,6 @@ token = data
         Message:
       </label>
      <input class="input-primary pb-32 text-start mb-4" id="message" type="text" placeholder="Hello, World!"  bind:value={$messageField.value} />
-     <div class="cf-turnstile" data-sitekey="0x4AAAAAAADj_D0FYcG1g4BO" data-callback="turnstileComplete"></div>
-    <button on:click={submit} class="relative h-9 w-full rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 mt-6 dark:bg-zinc-700" disabled={!$contactForm.valid}>Submit</button>
+     <div class="cf-turnstile" data-sitekey="0x4AAAAAAADj_D0FYcG1g4BO" data-callback="turnstileComplete"></div> 
+    <button on:click={contactSubmit} class="relative h-9 w-full rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 mt-6 dark:bg-zinc-700" >Submit</button>
     </section>
-
-</section>
