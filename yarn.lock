@@ -5265,6 +5265,11 @@ svelte-hmr@^0.15.1:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.1.tgz#d11d878a0bbb12ec1cba030f580cd2049f4ec86b"
   integrity sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==
 
+svelte-turnstile@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/svelte-turnstile/-/svelte-turnstile-0.3.1.tgz#13063b25a79230611f29b6fa3adcd1d08d83a8ff"
+  integrity sha512-b0A90zMMjm0U0S1zOP9R+msnG8+kBJNspBiLVzwaH7uOUmjFLt8ujArqlHWQhXj+bRZEMM2dXIYBykVDku7pXg==
+
 svelte2tsx@^0.5.11:
   version "0.5.23"
   resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.5.23.tgz#e20c464b3250f97902994d3784a57e87ca86a849"

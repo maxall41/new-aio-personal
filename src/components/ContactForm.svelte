@@ -1,5 +1,6 @@
 <script>
   import { required, email } from 'svelte-forms/validators';
+   import { Turnstile } from 'svelte-turnstile';
   import { API_URL } from '@/data/constants';
   import { form, field } from 'svelte-forms';
 
@@ -12,7 +13,7 @@
   function turnstileComplete(data) {
     console.log("CALL")
     console.log(data)
-    token = data;
+    token = data.token;
   }
 
   async function contactSubmit() {
@@ -44,6 +45,6 @@
         Message:
       </label>
      <input class="input-primary pb-32 text-start mb-4" id="message" type="text" placeholder="Hello, World!"  bind:value={$messageField.value} />
-     <div class="cf-turnstile" data-sitekey="0x4AAAAAAADj_D0FYcG1g4BO" data-callback="turnstileComplete"></div> 
+     <Turnstile turnstile-callback={turnstileComplete} siteKey="0x4AAAAAAADj_D0FYcG1g4BO" />
     <button on:click={contactSubmit} class="relative h-9 w-full rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 mt-6 dark:bg-zinc-700" >Submit</button>
     </section>
