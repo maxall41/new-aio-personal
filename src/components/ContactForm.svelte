@@ -13,7 +13,7 @@
   function turnstileComplete(data) {
     console.log("CALL")
     console.log(data)
-    token = data.token;
+    token = data.detail.token;
   }
 
   function turnstileFailed() {
