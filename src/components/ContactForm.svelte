@@ -10,6 +10,8 @@
   let token = ""
 
   function turnstileComplete(data) {
+    console.log("CALL")
+    console.log(data)
     token = data;
   }
 
