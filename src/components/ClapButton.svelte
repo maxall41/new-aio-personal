@@ -28,7 +28,7 @@
 
 
 <button
-	class="group relative h-9 w-16 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700;"
+	class="group relative h-9 w-16 rounded-md bg-zinc-200 p-2 ring-zinc-400 transition-all hover:ring-2 dark:bg-zinc-700"
 	on:click={clap}
 	><i class="fa-solid fa-hands-clapping text-white"></i><span class="ml-2" id="clap-count">{claps}</span
 	></button

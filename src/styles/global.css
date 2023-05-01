@@ -14,9 +14,9 @@
 
 	:root.dark {
 		color-scheme: dark;
-		--theme-bg: #1d1f21;
-		--theme-link: #d480aa;
-		--theme-text: #c9cacc;
+		--theme-bg: #000;
+		--theme-link: #79e1a0;
+		--theme-text: #79e1a0;
 		--theme-accent: #2bbc89;
 		--theme-accent-2: #eee;
 		--theme-quote: #ccffb6;
@@ -31,9 +31,9 @@
 		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 	}
 
-	.input-primary {
-		@apply w-full appearance-none rounded border py-2 px-3 leading-tight text-textColor focus:outline-none;
-	}
+	/*	.input-primary {*/
+	/*		@apply w-full appearance-none rounded border py-2 px-3 leading-tight text-textColor focus:outline-none;*/
+	/*	}*/
 }
 
 @tailwind components;
