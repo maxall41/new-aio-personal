@@ -25,5 +25,5 @@ const { Content } = await post.render();
 
 <PostLayout post={post}>
 	<Content />
-	<ClapButton client:visible id={post.id} />
+	<ClapButton client:idle id={post.id} />
 </PostLayout>

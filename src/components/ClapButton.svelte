@@ -28,7 +28,7 @@
 </script>
 
 
-<Button client:load on:click={clap}>
+<Button on:click={clap}>
   <i class="fa-solid fa-hands-clapping light:text-black dark:text-textColor"></i><span class="ml-2" id="clap-count">{claps}</span
 >
 </Button>
