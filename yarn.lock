@@ -1090,6 +1090,11 @@
   resolved "https://registry.yarnpkg.com/@vscode/l10n/-/l10n-0.0.11.tgz#325d7beb2cfb87162bc624d16c4d546de6a73b72"
   integrity sha512-ukOMWnCg1tCvT7WnDfsUKQOFDQGsyR5tNgRpwmqi+5/vzU3ghdDXzvIM4IOPdSb3OeSsBNvmSL8nxIVOqi2WXA==
 
+"@zerodevx/svelte-toast@^0.9.5":
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/@zerodevx/svelte-toast/-/svelte-toast-0.9.5.tgz#d86704f68e2f44475f53e273dc26c3d367ffb99a"
+  integrity sha512-JLeB/oRdJfT+dz9A5bgd3Z7TuQnBQbeUtXrGIrNWMGqWbabpepBF2KxtWVhL2qtxpRqhae2f6NAOzH7xs4jUSw==
+
 acorn-jsx@^5.0.0, acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"

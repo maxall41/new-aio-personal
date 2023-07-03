@@ -15,6 +15,10 @@ export const MENU_LINKS = [
     title: "Publications",
     path: "/publications",
   },
+  {
+    title: "Contact Me",
+    path: "/contact",
+  },
 ];
 
 export const SOCIAL_LINKS = {

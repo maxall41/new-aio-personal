@@ -1,0 +1,17 @@
+---
+import PageLayout from "@/layouts/Base";
+import ContactForm from "../components/ContactForm.svelte";
+
+const meta = {
+  title: "Contact Me",
+  description: "My publications",
+};
+---
+
+<PageLayout meta={meta}>
+  <div class="space-y-6">
+    <h1 class="title">Contact Me</h1>
+
+    <ContactForm client:idle />
+  </div>
+</PageLayout>
