@@ -11,8 +11,8 @@
 				body: JSON.stringify({
 					post_title: id,
 				}),
-			});
-			claps++;
+    });
+    claps++;
 	}
 
 	async function fetch_clap_data() {
