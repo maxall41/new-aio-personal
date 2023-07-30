@@ -1,5 +1,15 @@
 @tailwind base;
 
+
+@font-face {
+  font-family: "BerkeleyMonoRegular";
+  src: url("../assets/BerkeleyMono-Regular.ttf");
+}
+@font-face {
+  font-family: "BerkeleyMonoBold";
+  src: url("../assets/BerkeleyMono-Bold.ttf");
+}
+
 @layer base {
 	:root {
 		color-scheme: light;
@@ -28,7 +38,7 @@
 	}
 
 	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-berkeleymono text-sm font-normal text-textColor antialiased;
 	}
 
 	/*	.input-primary {*/
