@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
+// import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 import lottie from "astro-integration-lottie";
@@ -22,13 +22,11 @@ export default defineConfig({
 		mdx({}),
 		lottie(),
 		tailwind({
-			config: {
-				applyBaseStyles: false,
-			},
+      applyBaseStyles: false
 		}),
-		image({
-			serviceEntryPoint: "@astrojs/image/sharp",
-		}),
+		// image({
+		// 	serviceEntryPoint: "@astrojs/image/sharp",
+		// }),
 		sitemap(),
 		prefetch(),
 		svelte(),

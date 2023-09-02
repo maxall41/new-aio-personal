@@ -15,7 +15,7 @@ const {
 } = Astro.props;
 ---
 
-<html lang={siteConfig.lang}>
+<html transition:animate="none" class="dark" lang={siteConfig.lang}>
 	<head>
 		<BaseHead title={title} description={description} ogImage={ogImage} articleDate={articleDate} />
 		<script defer data-domain="maxc.codes" src="http://trace.maxc.codes/js/plausible.js"></script>
@@ -61,7 +61,7 @@ const {
 	<body>
 		<SkipLink />
 		<Header />
-		<main id="main" class="flex-1">
+		<main transition:animate="slide" id="main" class="flex-1">
 			<slot />
 		</main>
 		<Footer />

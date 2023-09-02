@@ -30,7 +30,7 @@ module.exports = {
 				// Add any custom fonts here
 				// sans: [...fontFamily.sans],
 				// serif: [...fontFamily.serif],
-        berkeleymono: ["BerkeleyMonoRegular"]
+        berkeleymono: ["BerkeleyMonoRegular","ui-monospace","monospace"]
 			},
 			transitionProperty: {
 				height: "height",

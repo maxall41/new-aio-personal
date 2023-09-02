@@ -7,7 +7,7 @@ import ClapButton from "src/components/ClapButton.svelte";
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 	const posts: CollectionEntry<"post">[] = await getCollection("post");
-	const params = posts.map((post) => ({
+	const params = posts.flatMap((post) => ({
 		params: { post: post.slug },
 		props: { post },
 	}));
