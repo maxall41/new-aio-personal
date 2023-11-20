@@ -10,7 +10,7 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://www.astro-theme-cactus.netlify.app/",
+	site: "https://maxc.codes",
 	markdown: {
 		shikiConfig: {
 			theme: "dracula",
