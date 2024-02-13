@@ -6,7 +6,8 @@
 
 
 	async function clap() {
-		const clapRequest = await fetch(API_URL + "api/claps/increment", {
+	    const url = API_URL + "api/claps/increment"
+		const clapRequest = await fetch(url, {
 				method: "POST",
 				body: JSON.stringify({
 					post_title: id,

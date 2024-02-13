@@ -28,4 +28,4 @@ export const SOCIAL_LINKS = {
   spotify: "https://open.spotify.com/artist/2ZS0LOJVCys33zUnbn66On",
 };
 
-export const API_URL = "https://blog-service.goal-crushers-api.workers.dev/";
+export const API_URL = "https://my-app-inky-mu.vercel.app/";
