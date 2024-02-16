@@ -29,3 +29,4 @@ export const SOCIAL_LINKS = {
 };
 
 export const API_URL = "https://my-app-inky-mu.vercel.app/";
+export const PUBLICATIONS = [['VIPER: A general model to predict enzyme substrates with improved performance', 'http://google.com']]
